@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setSupportActionBar(binding.topAppBar)
+        supportActionBar?.title = "Harry Potter Books"
+
         // setup recyclerviewz
         binding.rvBooks.layoutManager = LinearLayoutManager(this)
 

@@ -14,6 +14,13 @@ class DetailActivity : AppCompatActivity() {
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setSupportActionBar(binding.topAppBar)
+
+        supportActionBar?.title = "Book Detail"
+
+        binding.topAppBar.setNavigationOnClickListener {
+            finish()
+        }
 
         val title = intent.getStringExtra("title")
         val originalTitle = intent.getStringExtra("originalTitle")
