@@ -19,6 +19,7 @@ class BookAdapter(
 
         fun bind(book: Book) {
             binding.txtTitle.text = book.title ?: "No Title"
+            binding.txtRelease.text = book.releaseDate ?: "Unknown Release Date"
 
             Glide.with(itemView.context)
                 .load(book.cover)

@@ -13,7 +13,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:title=""
-            android:background="?attr/colorPrimary"
+            android:textStyle="bold"
+            android:background="#4CAF50"
             android:titleTextColor="@android:color/white"/>
     </com.google.android.material.appbar.AppBarLayout>
 

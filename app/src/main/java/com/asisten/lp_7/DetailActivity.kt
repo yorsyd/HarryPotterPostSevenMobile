@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.asisten.lp_7.databinding.ActivityDetailBinding
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 
 class DetailActivity : AppCompatActivity() {
 
@@ -37,6 +38,7 @@ class DetailActivity : AppCompatActivity() {
 
         Glide.with(this)
             .load(cover)
+            .transform(RoundedCorners(60))
             .into(binding.imgDetailCover)
     }
 }
